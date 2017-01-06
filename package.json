@@ -1,0 +1,27 @@
+{
+	"name": "light-reload",
+	"version": "0.1.0",
+	"description": "A simple reload lib for build tools",
+	"main": "index.js",
+	"scripts": {
+		"test": "test"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/hstarorg/light-reload.git"
+	},
+	"keywords": [
+		"browser",
+		"reload",
+		"websocket"
+	],
+	"author": "Jay.M.Hu",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/hstarorg/light-reload/issues"
+	},
+	"homepage": "https://github.com/hstarorg/light-reload#readme",
+	"dependencies": {
+		"ws": "^1.1.1"
+	}
+}
