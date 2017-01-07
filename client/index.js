@@ -12,12 +12,13 @@
       if (maxReconnectCount < reconnectCount) {
         return;
       }
-      console.log('重连次数:', reconnectCount);
+      console.log('reconnect count:', reconnectCount);
       ws = newWs();
     },
 
     handleError: function () {
       window.clearInterval(intervalId);
+      window.clearInterval(reloadTimeoutId);
       intervalId = setInterval(function () {
         util.reconnect();
       }, RECONNECT_MILLISECONDS);
